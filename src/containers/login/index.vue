@@ -11,6 +11,7 @@
         <router-link class="recover-link" :to="'my-page'">Recover lost Login ID or Password</router-link>
         <div class="instruction">
           To use WordEngine, your speakers or headphones must be switched on.
+          
         </div>
       </div>
     </div>
