@@ -1,0 +1,20 @@
+.header{
+  &-wrapper {
+    background: $primary-color;
+    color: $white;
+    display: flex;
+    padding: 10px 0;
+    
+    .header-content {
+      max-width: 425px;
+      width: 100%;
+      margin: auto;
+      display: block;
+
+      .page-name {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}

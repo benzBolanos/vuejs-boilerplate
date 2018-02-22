@@ -1,0 +1,33 @@
+.login {
+  &-wrapper {
+    &-form {
+      padding: 50px 0 20px;
+      text-align: center;
+
+      .primary-button {
+        margin-top: 20px;
+      }
+    }
+
+    &-content {
+      text-align: center;
+      padding: 20px 0;
+      
+      .recover-link {
+        color: black;
+        border-bottom: 1px solid black;
+        font-size: 16px;
+
+        &:hover {
+          outline: none;
+        }
+      }
+
+      .instruction {
+        text-align: left;
+        margin: 20px 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
