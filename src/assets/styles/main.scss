@@ -1,48 +1,5 @@
-@import "variables";
+@import "assets";
 
-body {
-  background: $secondary;
-
-  .route-container {
-    width: 100%;
-    max-width: 425px;
-    margin: auto;
-  }
-}
-
-.padding {
-  padding: 0 4vw;
-}
-
-.primary-input {
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid black;
-  border-radius: 0;
-  padding: 6px 2px;
-  color: black;
-  font-size: 18px;
-  margin-bottom: 20px;
-
-  &:placeholder,
-  &::-webkit-input-placeholder,
-  &::-moz-placeholder,
-  &:-ms-input-placeholder,
-  &:-moz-placeholder {
-    color: grey;
-  }
-
-  &:focus {
-    outline: none;
-    background: transparent;
-    border-bottom: 2px solid black;
-  }
-}
-
-.primary-button {
-  background: $orange;
-  padding: 3px 12px;
-  font-size: 18px;
-  font-weight: bold;
-  width: 120px;
+.header {
+  
 }

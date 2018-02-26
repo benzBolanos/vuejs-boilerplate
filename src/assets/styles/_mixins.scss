@@ -1,0 +1,18 @@
+@mixin borderRadius($radius) 
+{	
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin oInline($width, $align: top) 
+{
+	display: inline-block;
+	vertical-align: $align;
+	width: $width;
+	float: none;
+}
+
+@mixin bgTransparent($red, $green, $blue, $opacity) 
+{
+	background-color: rgba($red, $green, $blue, $opacity);
+}
