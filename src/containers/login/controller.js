@@ -3,15 +3,12 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      loginid: 'testing',
+      loginid: '',
       password: ''
     }
   },
   created: () => {
   },
   methods: {
-  },
-  component: {
-    props: ['loginid']
   }
 }
