@@ -88,6 +88,7 @@ module.exports =  {
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
         API_BASE_URL: JSON.stringify(process.env.API_BASE_URL),
+        API_TEST_URL: JSON.stringify(process.env.API_TEST_URL)
       }
     })
   ],
