@@ -4,13 +4,14 @@
       <div class="login-wrapper-form">
         <input class="primary-input" v-model="loginid" type="text"  placeholder="Login ID">
         <input class="primary-input" v-model="password" type="text" placeholder="Password">
-        <b-button class="primary-button" :size="'lg'">Log in</b-button>
+        <b-button class="primary-button" :size="'lg'" v-on:click="login(loginid, password)">Log in</b-button>
       </div>
       <div class="login-wrapper-content">
         <router-link class="recover-link" :to="'my-page'">Recover lost Login ID or Password</router-link>
         <div class="instruction">
           To use WordEngine, your speakers or headphones must be switched on.
         </div>
+        <img src="@/assets/images/hi_roby.png" alt="robot image">
       </div>
     </div>
   </div>

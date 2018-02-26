@@ -1,5 +1,49 @@
 @import "assets";
 
-.header {
-  
+body {
+  background: $tertiary;
+
+  .route-container {
+    width: 100%;
+    max-width: 425px;
+    margin: auto;
+  }
+}
+
+.padding {
+  padding: 0 2vw;
+}
+
+.primary-input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #808080;
+  border-radius: 0;
+  padding: 6px 2px;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  &:placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &:-moz-placeholder {
+    color: #CAC5C3;
+  }
+
+  &:focus {
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #808080;
+  }
+}
+
+.primary-button {
+  background: $orange;
+  padding: 3px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 120px;
 }
