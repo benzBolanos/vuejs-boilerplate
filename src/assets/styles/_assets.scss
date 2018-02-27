@@ -1,8 +1,11 @@
+@import 'fonts';
 @import 'variables';
 @import 'mixins';
 
 body {
-  background: $tertiary;
+  background: $color-secondary;
+  font-family: $font-regular;
+  font-size: 12px;
 
   .route-container {
     width: 100%;
