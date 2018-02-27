@@ -1,10 +1,15 @@
 <template>
   <div id="app">
+
     <Header></Header>
+
     <div class="route-container">
       <router-view></router-view>
     </div>
+
+    <Footer></Footer>
   </div>
+
 </template>
 
 <style lang="scss">
@@ -12,8 +17,7 @@
 </style>
 
 <script>
-import Header from '@/components/header/header'
-
+import Header from '@/components/Header'
 export default {
   name: 'App',
   components: {

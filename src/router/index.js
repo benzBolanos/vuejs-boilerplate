@@ -27,8 +27,8 @@ export default new Router({
     },
     {
       path: '/assets',
-      name: 'Assets',
-      components: Assets
+      name: 'Page Assets',
+      component: Assets
     }
   ]
 })
