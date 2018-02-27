@@ -1,4 +1,5 @@
 import { get } from '@/services/requestHandler'
+import { xmlConverter } from '@/services/xmlParser'
 
 export default {
   name: 'Login',
@@ -12,11 +13,13 @@ export default {
   created: () => {
   },
   methods: {
-    login(loginid, password) {
-      const url = `/login/userLogin?loginid=${ loginid }&password=${ password }`
+    login (loginid, password) {
+      // const url = `/login/userLogin?loginId=${loginid}&password=${password}`
+      const url = '/login/userLogin?loginId=TEST_eJ1q53225410211710&password=123456'
       get(url)
         .then((resp) => {
-          console.log(resp)
+          const jsonObj = xmlConverter(resp.data)
+          console.log(jsonObj)
         })
     }
   }
