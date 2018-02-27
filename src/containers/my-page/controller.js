@@ -1,5 +1,3 @@
-import { get } from '@/services/requestHandler'
-
 // directive
 import { test } from '@/directives/test'
 

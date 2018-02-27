@@ -94,5 +94,12 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "standard": {
+    "ignore": [
+      "template",
+      "test",
+      "src/services/xml2json.js"
+    ]
+  }
 }

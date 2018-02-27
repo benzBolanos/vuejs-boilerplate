@@ -16,19 +16,19 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: 'my-page',
+      path: '/my-page',
       name: 'My Page',
-      component: url.myPage
+      component: MyPage
     },
     {
-      path: 'login',
+      path: '/login',
       name: 'User Login',
       component: Login
     },
     {
-      path: 'assets',
+      path: '/assets',
       name: 'Assets',
-      components: url.assets
+      components: Assets
     }
   ]
 })
