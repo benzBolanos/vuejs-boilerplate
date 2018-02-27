@@ -8,15 +8,21 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     hydrated: false,
-    test: 'wews'
+    jsession: ''
   },
   actions: {
-  },
-  mutations: {
-    'DELETE_INDEXED_DB' () {
+    assignJSession(state, payload) {
+      this.commit('assignJSession', payload)
     }
   },
-  modules: VueIdb.modules,
+  mutations: {
+    assignJSession(state, payload) {
+      this.state.jsession = payload
+    }
+  },
+  modules: {
+    VueIdb: VueIdb.modules
+  },
   getters: {
     hydrated: state => state.hydrated
   },

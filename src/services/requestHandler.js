@@ -5,8 +5,14 @@ const HTTP = axios.create({
   baseURL: API_BASE_URL
 })
 
-const get = (url) => HTTP.get(url)
+const HTTPLogin = axios.create({
+  baseURL: API_BASE_URL
+})
+
+const Get = (url) => HTTP.get(url)
+const Login = (url) => HTTPLogin.get(url)
 
 export {
-  get
+  Get,
+  Login
 }
