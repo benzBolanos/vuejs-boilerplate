@@ -1,3 +1,5 @@
+import router from '@/router'
+
 import { get } from '@/services/requestHandler'
 import { xmlConverter } from '@/services/xmlParser'
 
@@ -19,9 +21,8 @@ export default {
       get(url)
         .then((resp) => {
           const jsonObj = xmlConverter(resp.data)
-          console.log(jsonObj)
           if(jsonObj.code._text === '1') {
-            console.log(jsonObj, `you're logged in!`)
+            router.push('ssf')
           }
         })
     }
