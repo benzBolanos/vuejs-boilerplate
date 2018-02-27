@@ -19,7 +19,7 @@ export default {
       get(url)
         .then((resp) => {
           const jsonObj = xmlConverter(resp.data)
-          const rspParsed = JSON.parse(jsonObj)
+          console.log(jsonObj)
         })
     }
   }
