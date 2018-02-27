@@ -7,7 +7,7 @@ const xmlConverter = (data) => {
   }
 
   const xmlJSONString = convert.xml2json(data, options)
-  return JSON.parse(xmlJSONString)
+  return JSON.parse(xmlJSONString).response
 }
 
 export {
