@@ -99,8 +99,7 @@
   "standard": {
     "ignore": [
       "template",
-      "test",
-      "src/services/xml2json.js"
+      "test"
     ]
   }
 }
