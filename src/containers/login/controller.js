@@ -14,12 +14,15 @@ export default {
   },
   methods: {
     login (loginid, password) {
-      // const url = `/login/userLogin?loginId=${loginid}&password=${password}`
-      const url = '/login/userLogin?loginId=TEST_eJ1q53225410211710&password=123456'
+      const url = `/login/userLogin?loginId=${loginid}&password=${password}`
+      // const url = '/login/userLogin?loginId=TEST_eJ1q53225410211710&password=123456'
       get(url)
         .then((resp) => {
           const jsonObj = xmlConverter(resp.data)
           console.log(jsonObj)
+          if(jsonObj.code._text === '1') {
+            console.log(jsonObj, `you're logged in!`)
+          }
         })
     }
   }
