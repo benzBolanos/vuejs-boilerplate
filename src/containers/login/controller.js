@@ -1,4 +1,5 @@
 import { get } from '@/services/requestHandler'
+import { xmlConverter } from '@/services/xmlParser'
 
 export default {
   name: 'Login',
@@ -17,9 +18,8 @@ export default {
       const url = '/login/userLogin?loginId=TEST_eJ1q53225410211710&password=123456'
       get(url)
         .then((resp) => {
-          // const jsonResp = convertXML(resp.data)
-          const xmlParser = new DOMParser()
-          const xmlObj = xmlParser.parseFromString(resp.data, 'text/xml')
+          const jsonObj = xmlConverter(resp.data)
+          const rspParsed = JSON.parse(jsonObj)
         })
     }
   }
