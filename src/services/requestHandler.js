@@ -15,6 +15,8 @@ const HTTPPub = axios.create({
 const Get = (url) => HTTP.get(url)
 const Login = (url) => HTTPPub.get(url)
 
+const post = (url) => HTTP.post(url)
+
 export {
   Get,
   Login
