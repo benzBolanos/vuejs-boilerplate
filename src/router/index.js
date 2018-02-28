@@ -5,7 +5,11 @@ import HelloWorld from '@/containers/home/index'
 import MyPage from '@/containers/my-page/index'
 import Login from '@/containers/login/index'
 import Assets from '@/containers/assets/index'
+<<<<<<< 812e8077882c1589485800fb6f78146086a1ec82
 import Ssf from '@/containers/ssf/index'
+=======
+import SignUp from '@/containers/signup/index'
+>>>>>>> signup form
 
 Vue.use(Router)
 
@@ -35,6 +39,11 @@ export default new Router({
       path: '/ssf',
       name: 'SSF',
       component: Ssf
+    },
+    {
+      path: '/signup',
+      name: 'New User Sign Up',
+      component: SignUp,
     }
   ]
 })
