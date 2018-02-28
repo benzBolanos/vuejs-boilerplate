@@ -5,6 +5,7 @@ import HelloWorld from '@/containers/home/index'
 import MyPage from '@/containers/my-page/index'
 import Login from '@/containers/login/index'
 import Assets from '@/containers/assets/index'
+import Ssf from '@/containers/ssf/index'
 
 Vue.use(Router)
 
@@ -27,8 +28,13 @@ export default new Router({
     },
     {
       path: '/assets',
-      name: 'Page Assets',
+      name: 'Assets',
       component: Assets
+    },
+    {
+      path: '/ssf',
+      name: 'SSF',
+      component: Ssf
     }
   ]
 })

@@ -1,4 +1,6 @@
-import { get } from '@/services/requestHandler'
+import router from '@/router'
+
+import { Login } from '@/services/requestHandler'
 import { xmlConverter } from '@/services/xmlParser'
 
 export default {
@@ -16,12 +18,14 @@ export default {
     login (loginid, password) {
       const url = `/login/userLogin?loginId=${loginid}&password=${password}`
       // const url = '/login/userLogin?loginId=TEST_eJ1q53225410211710&password=123456'
-      get(url)
+      Login(url)
         .then((resp) => {
           const jsonObj = xmlConverter(resp.data)
-          console.log(jsonObj)
-          if(jsonObj.code._text === '1') {
-            console.log(jsonObj, `you're logged in!`)
+          if (jsonObj.code._text === '1') {
+            
+            this.$store.dispatch('assignJSession', jsonObj.data.jsessionid._text)
+
+            router.push('ssf')
           }
         })
     }
