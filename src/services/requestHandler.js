@@ -12,7 +12,10 @@ const HTTPPub = axios.create({
   contentType: 'text'
 })
 
-const Get = (url) => HTTP.get(url)
+const Get = (url) => {
+  console.log('http:',HTTP)
+  return HTTP.get(url)
+}
 const Login = (url) => HTTPPub.get(url)
 
 const post = (url) => HTTP.post(url)
