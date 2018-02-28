@@ -9,8 +9,7 @@ const HTTP = axios.create({
 
 const HTTPPub = axios.create({
   baseURL: API_BASE_URL,
-  contentType: 'text',
-  withCredentials: true
+  contentType: 'text'
 })
 
 const Get = (url) => HTTP.get(url)
