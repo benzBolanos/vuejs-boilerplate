@@ -11,12 +11,12 @@ export default new Vuex.Store({
     jsession: ''
   },
   actions: {
-    assignJSession(state, payload) {
+    assignJSession (state, payload) {
       this.commit('assignJSession', payload)
     }
   },
   mutations: {
-    assignJSession(state, payload) {
+    assignJSession (state, payload) {
       this.state.jsession = payload
     }
   },

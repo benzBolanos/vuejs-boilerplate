@@ -19,7 +19,7 @@
 		</div>
 		<br>
 		<br>
-		<button class="btn btn-icon">Change Goal <img src="@/assets/images/btn-icon.png"></span></button>
+		<button class="btn btn-icon">Change Goal <img src="@/assets/images/btn-icon.png"></button>
 	</div>	
 </template>
 

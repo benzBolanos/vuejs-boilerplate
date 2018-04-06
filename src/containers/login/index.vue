@@ -9,9 +9,8 @@
       <div class="login-wrapper-content">
         <router-link class="recover-link" :to="'my-page'">Recover lost Login ID or Password</router-link>
         <div class="instruction">
-          To use WordEngine, your speakers or headphones must be switched on.
+          To use this, you just use this.
         </div>
-        <img src="@/assets/images/hi_roby.png" alt="robot image">
       </div>
     </div>
   </div>
